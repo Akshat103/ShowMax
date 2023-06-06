@@ -1,0 +1,114 @@
+body {
+    background: #212121;
+}
+
+.AllShows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.AllShows p {
+    color: aliceblue;
+}
+
+.card {
+    margin: 1rem;
+    width: 16rem;
+    height: 30rem;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -15px -15px 30px rgb(60, 60, 60);
+}
+
+.card-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-details img {
+    width: 12rem;
+}
+
+.card-details .name {
+    font-weight: bold;
+    margin: 2px;
+}
+
+.language-genres {
+    width: 16rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-premier {
+    text-align: left;
+    width: 16rem;
+}
+
+.rating-premier p {
+    margin: 0;
+}
+
+.name a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.name a:hover {
+    color: rgb(207, 207, 3);
+}
+
+.details a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.details a:hover {
+    color: rgb(207, 207, 3);
+}
+
+.details-btn {
+    margin: 1rem
+}
+
+.show {
+    display: grid;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 3rem;
+    border: 1px solid white;
+    grid-template-columns: 1fr 1fr;
+}
+
+.show img {
+    width: 20rem;
+}
+
+.show-name {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.summary {
+    margin-top: 1rem;
+}
+
+.show-details{
+    color: aliceblue;
+}
+
+.innerdiv{
+    display: flex;
+    justify-content: space-around;
+}
+
+  
