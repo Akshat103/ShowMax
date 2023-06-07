@@ -1,0 +1,9 @@
+ /* Media Queries */
+ @media (max-width: 768px) {
+
+     /* Tablet */
+     .show {
+         display: block;
+     }
+
+ }
