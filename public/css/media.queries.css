@@ -6,4 +6,8 @@
          display: block;
      }
 
+     .show img {
+        width: 12rem;
+     }
+
  }
