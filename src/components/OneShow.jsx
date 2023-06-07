@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import FormComponent from "./FormComponent";
 
-
 function OneShow() {
   const [show, setShow] = useState([]);
   const param = useParams();
@@ -10,6 +9,7 @@ function OneShow() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
+    // Get data from local storage
     const items = JSON.parse(localStorage.getItem("data"));
     if (items) {
       setData(items);
@@ -18,6 +18,7 @@ function OneShow() {
 
   useEffect(() => {
     if (data.length > 0) {
+      // Filter the data to find the show with the matching ID
       let searchResults = data.filter((item) => item.show.id == param.id);
       searchResults = searchResults[0].show;
       setShow(searchResults);
@@ -59,7 +60,7 @@ function OneShow() {
               </div>
             </div>
             <div className="form">
-                <FormComponent data={show} />
+              <FormComponent data={show} />
             </div>
           </div>
         </>

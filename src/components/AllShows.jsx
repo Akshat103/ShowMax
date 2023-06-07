@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom"
 const apiUrl = 'https://api.tvmaze.com/search/shows?q=all';
 
 const AllShows = () => {
-
     const [allShows, setAllShows] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
+        // Fetch data from the API
         async function fetchData() {
             fetch(apiUrl)
                 .then(response => response.json())
@@ -24,8 +24,8 @@ const AllShows = () => {
         fetchData();
     }, []);
 
-
     const oneShow = async (id) => {
+        // Navigate to the show details page
         navigate(`/show/${id}`);
     }
 
@@ -68,7 +68,6 @@ const AllShows = () => {
                         <h1>NO SHOWS FOUND</h1>
                 }
             </div>
-
         </>
     )
 }

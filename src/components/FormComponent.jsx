@@ -15,6 +15,7 @@ function FormComponent({ data }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Get form data from the input fields
     const formData = {
       numberOfTickets: e.target.elements["number-of-tickets"].value,
       customerName: e.target.elements["customer-name"].value,
@@ -22,6 +23,7 @@ function FormComponent({ data }) {
       customerPhone: e.target.elements["customer-phone"].value
     };
 
+    // Store form data in local storage
     localStorage.setItem("formData", JSON.stringify(formData));
 
     closeForm();
